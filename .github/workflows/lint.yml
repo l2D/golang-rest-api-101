@@ -27,3 +27,6 @@ jobs:
 
       - name: Super-Linter
         uses: github/super-linter@v4.8.7
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
