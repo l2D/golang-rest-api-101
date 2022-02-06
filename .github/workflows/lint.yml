@@ -1,0 +1,31 @@
+# Define name for workflow
+name: Lint
+
+# Add trigger. When push to this repo, this will run
+on: push
+
+# Setup the job when triggered. (This workflow will run sequentially.)
+jobs:
+  # Create 'run-lint' job
+  run-lint:
+    name: Lint code base
+    # Job will run based on this runner. (Ubuntu 20.04 LTS)
+    runs-on: ubuntu-20.04
+
+    # Sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out this repo.
+      - name: Checkout code
+      - uses: actions/checkout@v2
+      
+      - name: Setup Go environment
+        uses: actions/setup-go@v2.1.5
+        with:
+          go-version: '^1.17.6'
+          stable: true
+      - run: go version
+
+      - name: Run golangci-lint
+        uses: golangci/golangci-lint-action@v2.5.2
+        with:
+          version: 1.44.0
