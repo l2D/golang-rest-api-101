@@ -25,7 +25,5 @@ jobs:
           stable: true
       - run: go version
 
-      - name: Run golangci-lint
-        uses: golangci/golangci-lint-action@v2.5.2
-        with:
-          version: 1.44.0
+      - name: Super-Linter
+        uses: github/super-linter@v4.8.7
