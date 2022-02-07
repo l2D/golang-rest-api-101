@@ -118,3 +118,4 @@ $RECYCLE.BIN/
 
 # Synk cache
 .dccache
+.env
