@@ -15,8 +15,8 @@ Please delete options that are not relevant.
 
 # Checklist:
 
-- [ ] Add description to this changes
+- [ ] Add description to these changes
 - [ ] Lint code base with `golangci-lint`
 - [ ] Commented code, particularly in hard-to-understand areas
-- [ ] Added tests that prove this changes is effective or that feature works
-- [ ] New and existing unit tests pass locally with this changes
+- [ ] Added tests that prove these changes is effective or that feature works
+- [ ] New and existing unit tests pass locally with these changes
