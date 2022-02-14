@@ -7,7 +7,7 @@ import (
 	"gorm.io/gorm"
 )
 
-func InitRoutes(r *gin.Engine, db *gorm.DB) *gin.Engine {
+func InitializeRoutes(r *gin.Engine, db *gorm.DB) *gin.Engine {
 
 	// Routes
 	r.GET("/healthcheck", HealthCheckHandler)
