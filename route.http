@@ -1,0 +1,8 @@
+@hostname = localhost
+@port = 3241
+@host = {{hostname}}:{{port}}
+@jsonContentType = application/json
+
+###
+GET http://{{host}}/healthcheck
+Content-Type: {{jsonContentType}}
